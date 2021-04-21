@@ -10,6 +10,7 @@ import AllInboxIcon from '@material-ui/icons/AllInbox';
 import HomeIcon from '@material-ui/icons/Home';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
+import {NavLink} from 'react-router-dom'
 
 const drawerWidth = 230;
 
@@ -40,29 +41,29 @@ const Sidebar = () => {
                 <div className={classes.toolbar}></div>
                 <Divider></Divider>
                 <List component='nav'>
-
-                    <ListItem button>
+                    <ListItem button key='catalogo' component={NavLink} to='/catalogo' activeClassName="Mui-selected" exact>
                             <ListItemIcon>
                                 <AllInboxIcon></AllInboxIcon>
                             </ListItemIcon>
                             <ListItemText primary='Catalogo'/>
+                            
                     </ListItem>
                 
-                    <ListItem button>
+                    <ListItem button key='almacen' component={NavLink} to='/almacen' activeClassName="Mui-selected" exact>
                             <ListItemIcon>
                                 <HomeIcon></HomeIcon>
                             </ListItemIcon>
                             <ListItemText primary='Almacen'/>
                     </ListItem>
 
-                    <ListItem button>
+                    <ListItem button key='compras' component={NavLink} to='/compras' activeClassName='Mui-selected' exact>
                             <ListItemIcon>
                                 <ShoppingCartIcon></ShoppingCartIcon>
                             </ListItemIcon>
                             <ListItemText primary='Compras'/>
                     </ListItem>
 
-                    <ListItem button>
+                    <ListItem button key='ventas' component={NavLink} to='/ventas' activeClassName='Mui-selected' exact>
                             <ListItemIcon>
                                 <AttachMoneyIcon></AttachMoneyIcon>
                             </ListItemIcon>

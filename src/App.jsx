@@ -1,5 +1,5 @@
 import React from 'react'
-import Login from './components/Login'
+import Login from './views/Login'
 import View from './components/View'
 //importar el contexto donde se detecta el usuario
 
