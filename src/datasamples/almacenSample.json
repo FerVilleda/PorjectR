@@ -1,0 +1,47 @@
+[
+    {
+        "id": 0,
+        "nombre": "Lapiceros Arcoiris",
+        "empaque": "caja",
+        "cantidad": 10,
+        "precioCompra": 50,
+        "previoVenta": 70,
+        "cantidadPesos": 500
+    },
+    {
+        "id": 1,
+        "nombre": "Gomas azules",
+        "empaque": "caja",
+        "cantidad": 3,
+        "precioCompra": 120,
+        "previoVenta": 150,
+        "cantidadPesos": 360
+    },
+    {
+        "id": 2,
+        "nombre": "Cinta decorativa",
+        "empaque": "caja",
+        "cantidad": 10,
+        "precioCompra": 30,
+        "previoVenta": 50,
+        "cantidadPesos": 300
+    },
+    {
+        "id": 3,
+        "nombre": "Lapices de colores",
+        "empaque": "caja",
+        "cantidad": 10,
+        "precioCompra": 50,
+        "previoVenta": 70,
+        "cantidadPesos": 500
+    },
+    {
+        "id": 4,
+        "nombre": "Marcadores sharpie negro",
+        "empaque": "caja",
+        "cantidad": 10,
+        "precioCompra": 100,
+        "previoVenta": 150,
+        "cantidadPesos": 1000
+    }
+]

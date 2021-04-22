@@ -1,7 +1,7 @@
 import React from 'react'
 import {Container, TextField, Button, makeStyles, Grid, Typography} from '@material-ui/core'
 import { DataGrid } from '@material-ui/data-grid';
-import prodSample from '../datasamples/prodSample.json'
+import prodSample from '../datasamples/prodSample.json' 
 
 const columns = [
     { field: 'id', headerName: 'ID', width: 70 },
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(3, 0, 2),
     },
     grids: {
-        padding: theme.spacing(3)
+        padding: theme.spacing(3),
     }
   }));
 
@@ -42,6 +42,7 @@ const Catalogo = () => {
                     <Typography component='h3' variant='h5'>
                         Catalogo
                     </Typography>
+                    <br></br>
                     <div style={{ height: 400, width: '100%' }}>
                         <DataGrid rows={productos} columns={columns} pageSize={5} checkboxSelection />
                     </div>
