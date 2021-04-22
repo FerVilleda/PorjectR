@@ -43,5 +43,41 @@
         "precioCompra": 100,
         "previoVenta": 150,
         "cantidadPesos": 1000
+    },
+    {
+        "id": 5,
+        "nombre": "Post it amarillo",
+        "empaque": "caja",
+        "cantidad": 10,
+        "precioCompra": 100,
+        "previoVenta": 150,
+        "cantidadPesos": 1000
+    },
+    {
+        "id": 6,
+        "nombre": "Post it rosa",
+        "empaque": "caja",
+        "cantidad": 10,
+        "precioCompra": 100,
+        "previoVenta": 150,
+        "cantidadPesos": 1000
+    },
+    {
+        "id": 7,
+        "nombre": "Post it verde",
+        "empaque": "caja",
+        "cantidad": 10,
+        "precioCompra": 100,
+        "previoVenta": 150,
+        "cantidadPesos": 1000
+    },
+    {
+        "id": 8,
+        "nombre": "Post it azul",
+        "empaque": "caja",
+        "cantidad": 10,
+        "precioCompra": 100,
+        "previoVenta": 150,
+        "cantidadPesos": 1000
     }
 ]

@@ -3,8 +3,7 @@ import {Container, makeStyles, Typography} from '@material-ui/core'
 import TablaAlmacen from '../components/TablaAlmacen';
 
 const useStyles = makeStyles((theme) => ({
-    paper: {
-      margin: theme.spacing(8,1,1,-4),
+    paper: {    
       display: 'flex',
       flexDirection: 'row',
       alignItems: 'center'

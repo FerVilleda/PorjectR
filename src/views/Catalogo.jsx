@@ -43,8 +43,8 @@ const Catalogo = () => {
                         Catalogo
                     </Typography>
                     <br></br>
-                    <div style={{ height: 400, width: '100%' }}>
-                        <DataGrid rows={productos} columns={columns} pageSize={5} checkboxSelection />
+                    <div style={{ height: 550, width: '100%' }}>
+                        <DataGrid rows={productos} columns={columns} pageSize={8} checkboxSelection />
                     </div>
                 </Grid>
 

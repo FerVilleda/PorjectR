@@ -16,8 +16,8 @@ const almacen = almacenSample;
 
 const useStyles = makeStyles((theme) => ({
     grids: {
-        padding: theme.spacing(3),
-        marginTop: theme.spacing(3)
+        padding: theme.spacing(2),
+        marginTop: theme.spacing(4)
     }
   }));
 
@@ -30,12 +30,12 @@ const TablaAlmacen = () => {
                         Almacen
                     </Typography>
                     <br></br>
-                    <div style={{ height: 450, width: '100%' }}>
-                        <DataGrid rows={almacen} columns={columns} pageSize={5} checkboxSelection />
+                    <div style={{ height: 500, width: '100%' }}>
+                        <DataGrid rows={almacen} columns={columns} pageSize={7} checkboxSelection />
                     </div>
                     <br></br>
                     <Typography component='h4' variant='h6' color='secondary' align='center'>
-                        Valor total del inventario en MXN: $ 2660
+                        Valor total del inventario en MXN: $ 5660
                     </Typography>
             </Grid>
         </>
