@@ -1,0 +1,9 @@
+[
+    {
+        "id": 0,
+        "nombre": "Lapiceros Arcoiris",
+        "description": "Marca arcoiris, paquetes de 12",
+        "empaque": "caja",
+        "piezas": 200
+    }
+]
