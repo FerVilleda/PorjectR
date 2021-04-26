@@ -16,8 +16,7 @@ const almacen = almacenSample;
 
 const useStyles = makeStyles((theme) => ({
     grids: {
-        padding: theme.spacing(2),
-        marginTop: theme.spacing(4)
+        padding: theme.spacing(3),
     }
   }));
 

@@ -4,6 +4,7 @@ import TablaAlmacen from '../components/TablaAlmacen';
 
 const useStyles = makeStyles((theme) => ({
     paper: {    
+      margin: theme.spacing(1,1,1,-4),
       display: 'flex',
       flexDirection: 'row',
       alignItems: 'center'

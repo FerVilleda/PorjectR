@@ -58,7 +58,9 @@ const FormCompra = () => {
                             size='small'
                             variant='outlined'  
                             color='secondary' 
-                        />
+                        >
+                            hola
+                        </TextField>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <TextField

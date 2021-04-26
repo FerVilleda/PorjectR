@@ -5,16 +5,16 @@ import FormProveedor from '../components/FormProveedor';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
-      margin: theme.spacing(8,1,1,-4),
+      margin: theme.spacing(1,1,1,-4),
       display: 'flex',
       flexDirection: 'row',
       alignItems: 'center'
     },
     grids: {
-        padding: theme.spacing(3),
+        margin: theme.spacing(3),
     },
     btns:{
-        margin: theme.spacing(3)
+        marginRight: theme.spacing(1)
     }
   }));
 
@@ -26,15 +26,19 @@ const Compras = () => {
     return (
         <>
             <Container component='main' maxWidth='xl' className={classes.paper}>
-                <Grid container xs={4} direction='column' justify='flex-start' alignItems='flex-start'>
-                    <Grid direction='row'>
+                <Grid container xs={4} direction='column' justify='center' alignItems='flex-start' className={classes.grids}>
+                    <Typography component='h3' variant='h5'>
+                        Compras
+                    </Typography>
+                    <Grid direction='row' className={classes.grids}>
                         <Button variant='outlined'
                                 margin='normal'                          
                                 id='provA'
                                 name='provA'
                                 color='secondary'
                                 className={classes.btns}
-                                onClick={()=>setEscompra(false)}>
+                                onClick={()=>setEscompra(false)}
+                                size='small'>
                             Registrar Proveedor
                         </Button>
                         <Button variant='outlined'
@@ -43,7 +47,8 @@ const Compras = () => {
                                 name='provA'
                                 color='secondary'
                                 className={classes.submit}
-                                onClick={()=> setEscompra(true)}>
+                                onClick={()=> setEscompra(true)}
+                                size='small'>
                             Registrar Compra
                         </Button>
                     </Grid>

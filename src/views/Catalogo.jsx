@@ -13,7 +13,7 @@ const columns = [
 const productos = prodSample
 const useStyles = makeStyles((theme) => ({
     paper: {
-      margin: theme.spacing(8,1,1,-4),
+      margin: theme.spacing(1,1,1,-4),
       display: 'flex',
       flexDirection: 'row',
       alignItems: 'center'
