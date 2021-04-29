@@ -1,5 +1,7 @@
 import React from 'react'
-import {makeStyles, TextField, Button, Divider, Grid, Typography} from '@material-ui/core'
+import {makeStyles, TextField, Button, Divider, Grid, Typography, MenuItem} from '@material-ui/core'
+import prodSample from '../datasamples/prodSample.json'
+import proveedorSample from '../datasamples/proveedorSample.json'
 
 const useStyles = makeStyles((theme) => ({
     form: {
@@ -13,6 +15,8 @@ const useStyles = makeStyles((theme) => ({
 
 const FormCompra = () => {
     const classes = useStyles()
+    const productos = prodSample
+    const proveedores = proveedorSample
     return (
         <>
             <form className={classes.form}>
@@ -32,7 +36,15 @@ const FormCompra = () => {
                             variant='outlined'
                             color='secondary'
                             select                 
-                        />
+                        >
+                            {
+                                productos.map(producto=>(
+                                    <MenuItem spacing={2} key={producto.id} value={producto.nombre}>
+                                        {producto.nombre} - {producto.empaque}
+                                    </MenuItem>
+                                ))
+                            }
+                        </TextField>
                     </Grid>
                     <Grid item xs={12}>
                         <TextField
@@ -45,28 +57,36 @@ const FormCompra = () => {
                             variant='outlined'
                             color='secondary'
                             select                 
-                        />
+                        >
+                            {
+                                proveedorSample.map( prov => (
+                                    <MenuItem key={prov.id} value={prov.nombre}>
+                                        {prov.nombre} - {prov.rfc}
+                                    </MenuItem>
+                                ))
+                            }
+                        </TextField>
                     </Grid>
                     
                     <Grid item xs={12} sm={6}>
                         <TextField
                             required
-                            id="firstName"
-                            name="firstName"
+                            id="cantidad"
+                            name="cantidad"
                             label="Cantidad"
                             fullWidth
                             size='small'
                             variant='outlined'  
                             color='secondary' 
                         >
-                            hola
+                            
                         </TextField>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <TextField
                             required
-                            id="lastName"
-                            name="lastName"
+                            id="precio"
+                            name="precio"
                             label="Precio"
                             fullWidth
                             size='small'

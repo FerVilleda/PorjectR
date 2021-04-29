@@ -1,0 +1,10 @@
+[
+    {
+        "id": 0,
+        "uid_prov": "1",
+        "uid_prod": "3",
+        "cantidad": 3,
+        "precio": 200,
+        "total": 600
+    }
+]

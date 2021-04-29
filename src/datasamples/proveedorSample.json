@@ -1,9 +1,20 @@
 [
     {
         "id": 0,
-        "nombre": "Lapiceros Arcoiris",
-        "description": "Marca arcoiris, paquetes de 12",
-        "empaque": "caja",
-        "piezas": 200
+        "nombre": "Merceria portales",
+        "razonS": "Tienda local",
+        "rfc": "FGHD92763HG",
+        "direccion": 200,
+        "telefono": "1876576576",
+        "email": "proveedor1@dominio.com"
+    },
+    {
+        "id": 2,
+        "nombre": "Papeleria Hola",
+        "razonS": "Tienda local",
+        "rfc": "JFUTH8374HG",
+        "direccion": 200,
+        "telefono": "1876576576",
+        "email": "proveedor2@dominio.com"
     }
 ]

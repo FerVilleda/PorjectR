@@ -70,6 +70,29 @@ const FormProveedor = () => {
                             color='secondary' 
                         />
                     </Grid>
+                    <Grid item xs={12}>
+                        <TextField
+                            id="email"
+                            name="email"
+                            label="E-mail"
+                            fullWidth
+                            size='small'
+                            variant='outlined'
+                            color='secondary'
+                            type='email'                   
+                        />
+                    </Grid>
+                    <Grid item xs={12}>
+                        <TextField
+                            id="tel"
+                            name="telefono"
+                            label="Telefono"
+                            fullWidth
+                            size='small'
+                            variant='outlined'
+                            color='secondary'                   
+                        />
+                    </Grid>
                     <Button 
                         type='submit'
                         fullWidth
