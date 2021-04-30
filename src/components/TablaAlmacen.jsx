@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, makeStyles, Grid, Typography} from '@material-ui/core'
+import {makeStyles, Grid, Typography} from '@material-ui/core'
 import { DataGrid } from '@material-ui/data-grid';
 import almacenSample from '../datasamples/almacenSample.json'
 

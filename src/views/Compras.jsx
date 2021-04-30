@@ -2,6 +2,7 @@ import React from 'react'
 import {Container, Grid, makeStyles, Typography, Button, Divider} from '@material-ui/core'
 import FormCompra from '../components/FormCompra';
 import FormProveedor from '../components/FormProveedor';
+import TablaCompras from '../components/TablaCompras'
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -62,7 +63,7 @@ const Compras = () => {
                 </Grid>
 
                 <Grid item xs={8} className={classes.grids}>
-                    Tabla de compras
+                    <TablaCompras></TablaCompras>
                 </Grid>
                 
             </Container>
