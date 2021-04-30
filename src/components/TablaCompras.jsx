@@ -23,7 +23,7 @@ const TablaCompras = () => {
     return (
         <>
             
-                    <div style={{ height: 600, width: '100%' }}>
+                    <div style={{ height: 500, width: '100%' }}>
                         <DataGrid rows={compras} columns={columns} pageSize={7} checkboxSelection />
                     </div>
             

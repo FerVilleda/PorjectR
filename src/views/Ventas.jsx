@@ -2,6 +2,7 @@ import React from 'react'
 import {Container, Grid, Typography, makeStyles, Button, Divider} from '@material-ui/core'
 import FormVentas from '../components/FormVentas'
 import FormCliente from '../components/FormCliente'
+import TablaCompras from '../components/TablaCompras'
 
 const useStyles = makeStyles((theme) => ({
     principal:{
@@ -29,9 +30,9 @@ const Ventas = () => {
                         Ventas
                     </Typography>
                 </Grid>
-                <Container component='body' maxWidth='xl' direction='row'>
+                <Grid container xs={12} direction='row'>
                     <Grid container xs={4} direction='column' justify='center' alignItems='center' >
-                        <Grid direction='row' alignItems='flex-start'>
+                        <Grid direction='row' alignItems='flex-start' >
                             <Button
                                 variant='outlined'
                                 color='secondary'
@@ -57,9 +58,9 @@ const Ventas = () => {
                         
                     </Grid>
                     <Grid container xs={8} direction='column'>
-                        Tabla 
+                        <TablaCompras></TablaCompras> 
                     </Grid>
-                </Container>
+                </Grid>
             </Container>
         </>
     )
