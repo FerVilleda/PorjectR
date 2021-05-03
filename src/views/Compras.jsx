@@ -1,4 +1,3 @@
-  
 import React from 'react'
 import {Container, Grid, makeStyles, Typography, Button, Divider} from '@material-ui/core'
 import FormCompra from '../components/FormCompra';
@@ -16,7 +15,10 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(3),
     },
     btns:{
-        marginRight: theme.spacing(1)
+        marginRight: theme.spacing(2)
+    },
+    top:{
+        marginTop: theme.spacing(3)
     }
   }));
 
@@ -32,7 +34,7 @@ const Compras = () => {
                     <Typography component='h3' variant='h5'>
                         Compras
                     </Typography>
-                    <Grid direction='row' className={classes.grids}>
+                    <Grid container direction='row' className={classes.top} justify='center'>
                         <Button variant='outlined'
                                 margin='normal'                          
                                 id='provA'
@@ -41,17 +43,17 @@ const Compras = () => {
                                 className={classes.btns}
                                 onClick={()=>setEscompra(false)}
                                 size='small'>
-                            Registrar Proveedor
+                            Agregar Proveedor
                         </Button>
                         <Button variant='outlined'
                                 margin='normal'                          
                                 id='provA'
                                 name='provA'
                                 color='secondary'
-                                className={classes.submit}
+                                className={classes.btns}
                                 onClick={()=> setEscompra(true)}
                                 size='small'>
-                            Registrar Compra
+                            Agregar Compra
                         </Button>
                     </Grid>
                     
@@ -63,7 +65,7 @@ const Compras = () => {
                     
                 </Grid>
 
-                <Grid item xs={8} className={classes.grids}>
+                <Grid item xs={8} className={classes.top} >
                     <TablaCompras></TablaCompras>
                 </Grid>
                 

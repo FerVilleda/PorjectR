@@ -1,0 +1,18 @@
+[
+    {
+        "id": 0,
+        "uid_cliente": "1",
+        "uid_prod": "3",
+        "cantidad": 3,
+        "precio": 100,
+        "total": 300
+    },
+    {
+        "id": 1,
+        "uid_cliente": "3",
+        "uid_prod": "1",
+        "cantidad": 4,
+        "precio": 100,
+        "total": 400
+    }
+]

@@ -4,7 +4,7 @@ import {makeStyles, Grid, Typography, TextField, Button, Divider, MenuItem} from
 const useStyles = makeStyles( theme => ({
     form:{
         width: '100%',
-        marginTop: theme.spacing(7)
+        marginTop: theme.spacing(3)
     },
     submit: {
         margin: theme.spacing(3,1,2)

@@ -14,7 +14,7 @@ const columns = [
 const compras = comprasSample;
 const useStyles = makeStyles((theme) => ({
     grids: {
-        padding: theme.spacing(3),
+        padding: theme.spacing(1),
     }
   }));
 
